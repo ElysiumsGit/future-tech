@@ -7,8 +7,8 @@ import SubContainer from "../../components/SubContainer/SubContainer";
 import CategoryFilter from "../../components/Category/CategoryFilter";
 import { FaShareAlt } from "react-icons/fa";
 import MoreBlogsSection from "../../components/Card/MoreBlogsSection";
-import Ebooks from "../../assets/Home/Ebooks.png";
 import BlogContent from "../../components/Card/BlogContent";
+import WhitePaper from "../../assets/Home/Whitepaper.png";
 
 const Hero = () => {
 
@@ -236,6 +236,33 @@ const Hero = () => {
       />
       
       <BlogContent/>
+      <BlogContent
+        title="Whitepapers"
+        avatars={[
+          "https://randomuser.me/api/portraits/men/32.jpg",
+          "https://randomuser.me/api/portraits/men/44.jpg",
+          "https://randomuser.me/api/portraits/women/55.jpg",
+        ]}
+        description="Dive into comprehensive reports and analyses with our collection of whitepapers. "
+        buttonText="Download Whitepapers"
+        downloadStat={{ label: "Accessed by", value: "50k+ professionals" }}
+        rightTitle="Topics Coverage"
+        rightDescription="Whitepapers cover quantum computing (20%), AI ethics (15%), space mining prospects (20%), AI in healthcare (15%), and renewable energy strategies (30%)."
+        rightImage={WhitePaper}
+        stats={[
+          { label: "Total Papers", value: "300+" },
+          { label: "Formats", value: "PDF & DOCX available" },
+        ]}
+        expertise="Whitepapers are authored by subject matter experts with an average of 20 years of experience."
+      />
+
+       <SubContainer
+        title="What Our Readers Say"
+        subtitle="Real Words from Real Readers"
+        hasButton
+        buttonTitle="View All Testimonials"
+      />
+
     </div>
   );
 };
