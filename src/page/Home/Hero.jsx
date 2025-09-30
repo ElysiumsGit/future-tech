@@ -1,10 +1,14 @@
 import React from "react";
-import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowRight, FaCommentDots, FaHeart } from "react-icons/fa6";
 import HeroImage from "../../assets/Home/HeroImage.png";
 import IconLatestNews from "../../assets/Home/icon-latest-news.png";
 import BlogSection from "../../components/Card/BlogSectionCard";
 import SubContainer from "../../components/SubContainer/SubContainer";
 import CategoryFilter from "../../components/Category/CategoryFilter";
+import { FaShareAlt } from "react-icons/fa";
+import MoreBlogsSection from "../../components/Card/MoreBlogsSection";
+import Ebooks from "../../assets/Home/Ebooks.png";
+import BlogContent from "../../components/Card/BlogContent";
 
 const Hero = () => {
 
@@ -75,6 +79,10 @@ const Hero = () => {
     "Biotechnology",
     "Renewable Energy",
   ];
+
+  const handleCategorySelect = (category) => {
+    console.log("Selected category:", category);
+  };
 
   return (
     <div className="bg-black text-white poppins-regular">
@@ -206,13 +214,28 @@ const Hero = () => {
       />
 
       <SubContainer
-        title="Your Gateway to In-Depth Information"
-        subtitle="Unlock Valuable Knowledge with FutureTech's Resources"
+        title="A Knowledge Treasure Trove"
+        subtitle="Explore FutureTech's In-Depth Blog Posts"
         hasButton
         buttonTitle="View All Blogs"
       />
 
       <CategoryFilter categories={categories} onSelect={handleCategorySelect} />
+
+      <MoreBlogsSection
+        name="John Carlo Abanes"
+      />
+      <MoreBlogsSection/>
+      <MoreBlogsSection/>
+
+      <SubContainer
+        title="Your Gateway to In-Depth Information"
+        subtitle="Unlock Valuable Knowledge with FutureTech's Resources"
+        hasButton
+        buttonTitle="View All Resources"
+      />
+      
+      <BlogContent/>
     </div>
   );
 };

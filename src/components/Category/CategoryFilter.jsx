@@ -9,12 +9,12 @@ const CategoryFilter = ({ categories, onSelect }) => {
   };
 
   return (
-    <section className="bg-black w-full px-40 py-12 flex gap-5 border-primary flex-wrap">
+    <section className="bg-black w-full px-40 py-12 flex gap-5 border-primary ">
       {categories.map((category) => (
         <button
           key={category}
           onClick={() => handleClick(category)}
-          className={`py-3 px-6 rounded-md transition-colors duration-300 
+          className={`py-5 w-full px-6 rounded-md transition-colors duration-300 cursor-pointer
             ${
               active === category
                 ? "bg-[#262626] text-white"
