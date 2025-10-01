@@ -9,6 +9,8 @@ import { FaShareAlt } from "react-icons/fa";
 import MoreBlogsSection from "../../components/Card/MoreBlogsSection";
 import BlogContent from "../../components/Card/BlogContent";
 import WhitePaper from "../../assets/Home/Whitepaper.png";
+import TestimonialCard from "../../components/Card/TestimonialCard";
+import Logo from "../../assets/Home/logoBig.png";
 
 const Hero = () => {
 
@@ -262,7 +264,72 @@ const Hero = () => {
         hasButton
         buttonTitle="View All Testimonials"
       />
+      
+      <div className="grid grid-cols-3 divide-x divide-y divide-[#222]">
+        <div className="pr-10 pl-40">
+          <TestimonialCard
+            profile="https://randomuser.me/api/portraits/women/32.jpg"
+            name="Sarah Thompson"
+            location="San Francisco, USA"
+            comment="The ebooks on AI in education have been a game-changer for my research. They provide in-depth insights and case studies that are invaluable for staying updated."
+          />
+        </div>
+        <div className="px-10">
+          <TestimonialCard
+            profile="https://randomuser.me/api/portraits/men/31.jpg"
+            name="Raj Patel"
+            location="Mumbai, India"
+            comment="The whitepapers on renewable energy strategies have greatly influenced my work. They offer detailed data and analysis, helping me make informed decisions."
+          />
+        </div>
+        <div className="pl-10 pr-40">
+          <TestimonialCard
+            profile="https://randomuser.me/api/portraits/women/33.jpg"
+            name="Emily Adams"
+            location="London, UK"
+            comment="The AI in healthcare reports have been an essential resource for our hospital. They highlight the latest innovations and best practices, improving patient care."
+          />
+        </div>
+        <div className="px-10 pl-40">
+          <TestimonialCard
+            profile="https://randomuser.me/api/portraits/men/31.jpg"
+            name="Raj Patel"
+            location="Mumbai, India"
+            comment="The whitepapers on renewable energy strategies have greatly influenced my work. They offer detailed data and analysis, helping me make informed decisions."
+          />
+        </div>
+        <div className="px-10">
+          <TestimonialCard
+            profile="https://randomuser.me/api/portraits/men/31.jpg"
+            name="Raj Patel"
+            location="Mumbai, India"
+            comment="The whitepapers on renewable energy strategies have greatly influenced my work. They offer detailed data and analysis, helping me make informed decisions."
+          />
+        </div>
+        <div className="px-10 pr-40">
+          <TestimonialCard
+            profile="https://randomuser.me/api/portraits/men/31.jpg"
+            name="Raj Patel"
+            location="Mumbai, India"
+            comment="The whitepapers on renewable energy strategies have greatly influenced my work. They offer detailed data and analysis, helping me make informed decisions."
+          />
+        </div>
+      </div>
 
+      <section className="background-secondary px-40 py-28">
+        <section className="flex gap-10 items-center">
+          <div>
+            <img src={Logo} alt="" className="w-[150px]" />
+          </div>
+          <div className="flex flex-col gap-7">
+            <div>
+              Learn, Connect, and Innovate
+            </div>
+            <h1 className="font-semibold text-5xl">Be Part of the Future Tech Revolution</h1>
+            <p className="text-gray text-lg">Immerse yourself in the world of future technology. Explore our comprehensive resources, connect with fellow tech enthusiasts, and drive innovation in the industry. Join a dynamic community of forward-thinkers.</p>
+          </div>
+        </section>
+      </section>
     </div>
   );
 };
