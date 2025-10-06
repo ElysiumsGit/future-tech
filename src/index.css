@@ -24,6 +24,10 @@
   --color-info: #3b82f6;
 }
 
+body{
+  background-color: #141414;
+}
+
 .border-primary{
   border: var(--color-border-primary) 1px solid
 }
@@ -46,4 +50,15 @@
 
 .color-primary{
   color: var(--color-btn-primary);
+}
+
+/* Custom CSS to hide scrollbar while keeping content scrollable */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* Optional: For IE, Edge, and Firefox (less effective on mobile) */
+.hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }

@@ -7,7 +7,7 @@ const TestimonialCard = ({
     comment = "The ebooks on AI in education have been a game-changer for my research. They provide in-depth insights and case studies that are invaluable for staying updated."
 }) => {
   return (
-    <section className="bg-black py-20 flex justify-center">
+    <section className="background-primary py-20 flex justify-center">
         <div className="max-w-lg text-center text-white">
           {/* Profile Section */}
           <div className="flex items-center justify-center gap-4 mb-6">
@@ -24,7 +24,7 @@ const TestimonialCard = ({
 
           {/* Stars */}
           <div className="flex justify-center -mb-6 relative z-10">
-            <div className="bg-black px-4 py-1 rounded-full flex  border-primary gap-1">
+            <div className="background-primary px-4 py-1 rounded-full flex  border-primary gap-1">
               {Array(5)
                 .fill()
                 .map((_, i) => (
